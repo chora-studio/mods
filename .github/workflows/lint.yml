@@ -79,27 +79,27 @@ jobs:
             validator/go.mod
             validator/go.sum
         if: matrix.module == 'validator'
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'admin/go.mod'
         if: steps.git-diff-admin.outputs.diff
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'content/go.mod'
         if: steps.git-diff-content.outputs.diff
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'governor/go.mod'
         if: steps.git-diff-governor.outputs.diff
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'subject/go.mod'
         if: steps.git-diff-subject.outputs.diff
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'validator/go.mod'
         if: steps.git-diff-validator.outputs.diff
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'voucher/go.mod'
         if: steps.git-diff-voucher.outputs.diff
@@ -251,27 +251,27 @@ jobs:
           PATTERNS: |
             voucher/**/**.proto
         if: matrix.module == 'voucher'
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'admin/go.mod'
         if: steps.git-diff-admin.outputs.diff
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'content/go.mod'
         if: steps.git-diff-content.outputs.diff
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'governor/go.mod'
         if: steps.git-diff-governor.outputs.diff
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'subject/go.mod'
         if: steps.git-diff-subject.outputs.diff
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'validator/go.mod'
         if: steps.git-diff-validator.outputs.diff
-      - uses: actions/setup-go@v5
+      - uses: actions/setup-go@v7
         with:
           go-version-file: 'voucher/go.mod'
         if: steps.git-diff-voucher.outputs.diff
