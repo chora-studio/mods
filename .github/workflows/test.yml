@@ -64,7 +64,7 @@ jobs:
         if: |
           (env.GIT_DIFF && matrix.module == 'voucher') ||
           github.ref == 'refs/heads/main'
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: coverage-admin
           path: coverage-admin.out
@@ -72,7 +72,7 @@ jobs:
         if: |
           (env.GIT_DIFF && matrix.module == 'admin') ||
           github.ref == 'refs/heads/main'
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: coverage-content
           path: coverage-content.out
@@ -80,7 +80,7 @@ jobs:
         if: |
           (env.GIT_DIFF && matrix.module == 'content') ||
           github.ref == 'refs/heads/main'
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: coverage-governor
           path: coverage-governor.out
@@ -88,7 +88,7 @@ jobs:
         if: |
           (env.GIT_DIFF && matrix.module == 'governor') ||
           github.ref == 'refs/heads/main'
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: coverage-subject
           path: coverage-subject.out
@@ -96,7 +96,7 @@ jobs:
         if: |
           (env.GIT_DIFF && matrix.module == 'subject') ||
           github.ref == 'refs/heads/main'
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: coverage-validator
           path: coverage-validator.out
@@ -104,7 +104,7 @@ jobs:
         if: |
           (env.GIT_DIFF && matrix.module == 'validator') ||
           github.ref == 'refs/heads/main'
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: coverage-voucher
           path: coverage-voucher.out
